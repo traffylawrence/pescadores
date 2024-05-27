@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
 }
-
-body {
-    background-color: #1A1A1A;
-    height: 100vh;
+body{
+    width: 100%;
+    height: 100%;
+overflow-x: hidden;
 }
+
+    
+
 
 .carousel-container {
     width: 80%; 
@@ -104,10 +108,15 @@ font-weight: bold;
 .team{
     margin-bottom: 1rem;
 }
+.team .card-title{
+    font-weight: bold;
+    
+}
 .team .card{
     margin-top: 1rem;
     -webkit-box-shadow: 0px 5px 12px 0px #000000; 
     box-shadow: 0px 5px 12px 0px #000000;
+    text-align: center;
 }
 .team .ribbon {
     font-size: 28px;
@@ -126,18 +135,42 @@ font-weight: bold;
      #2ca54a padding-box; /* the color  */
     width: fit-content;
   }
+  .aboutus .col-sm-5{
+    margin-top: 1rem;
+  }
+  .aboutus .col-sm-5 .card-body{
+    -webkit-box-shadow: 0px 5px 12px 0px #000000; 
+    box-shadow: 0px 5px 12px 0px #000000;
+  }
 @media (max-width: 992px) {
    .team .card {
-       
     width: 180px;
+    font-size: 12px;
+    text-align: center;
     }
-
+    .team .card-title{
+        font-size:14px;
+        font-weight: bold;
+        
+    }
+    .aboutus .card-img-top{
+        width: 300px;
+    }
 }
 @media (max-width: 576px) {
     .team .card {
-        width: 180px;
-
-    }
+        width: 160px;
+        font-size: 12px;
+        text-align: center;
+        }
+        .team .card-title{
+            font-size:14px;
+            font-weight: bold;
+            
+        }
+        .aboutus .card-img-top{
+            width: 300px;
+        }
 }
 
 
@@ -167,7 +200,13 @@ font-weight: bold;
         font-size: 12px;
     }
     .about-agency img{
-        width: 100px;
+   width: 200px;
+.about-agency .btn btn-success{
+text-align: center;
+}
     }
-
+    .about-agency .col-md-4 {
+        text-align: center; /* Center the image horizontally */
+        margin-top: 1rem;
+    }
 }
