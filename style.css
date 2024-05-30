@@ -66,7 +66,6 @@ overflow-x: hidden;
     -webkit-box-shadow: 1px 2px 5px 0px #B4B4B4; 
     box-shadow: 1px 2px 5px 0px #B4B4B4;
 }
-
 .testimonial-carousel {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -74,21 +73,44 @@ overflow-x: hidden;
     color: white;
     padding: 50px 0;
   }
+  
   .testimonial-carousel .testimonial-item {
     background-color: white;
     color: black;
     padding: 30px;
     border-radius: 10px;
-    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
+  
   .testimonial-carousel .testimonial-item img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    margin-right: 20px; /* Adjust margin as needed */
   }
-  .testimonial-carousel .testimonial-controls {
-    color: black;
+  
+  
+  
+  .testimonial-carousel .carousel-control-prev,
+  .testimonial-carousel .carousel-control-next {
+    width: 5%; /* Adjust the width if needed */
   }
+  
+  .testimonial-carousel .carousel-control-prev-icon,
+  .testimonial-carousel .carousel-control-next-icon {
+    background-color: #006d65;
+    border-radius: 50%;
+    padding: 10px; /* Adjust padding for better visibility */
+  }
+  
+  
+
+
+
+
 footer {
     margin-top: 1.5rem;
     border-top: 1px solid #eaeaea;
@@ -136,6 +158,7 @@ font-weight: bold;
     font-weight: bold;
     
 }
+
 .team .card{
     margin-top: 1rem;
     -webkit-box-shadow: 0px 5px 12px 0px #000000; 
@@ -198,17 +221,23 @@ font-weight: bold;
         font-weight: bold;
         
     }
+    .about-agency img{
+        visibility: hidden;
+    }
     .aboutus .card-img-top{
         width: 300px;
     }
 }
 @media (max-width: 576px) {
     .testimonial-carousel p{
-        font-size: 12px;
+        font-size: 18px;
     }
-    .testimonial-carousel h5{
+    .about-agency img{
+        visibility: hidden;
+    }
+    .testimonial-carousel h2{
         margin-top: 1rem;
-        font-size: 20px;
+        font-size: 24px;
     }
 .testimonial-carousel .col-md-10{
     text-align: center;
@@ -250,15 +279,18 @@ font-weight: bold;
     text-align: center;
 }
     .carousel-caption p {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .carousel-caption .btn {
-        font-size: 12px;
+        font-size: 10px;
         padding: 8px 16px;
     }
     .about-agency{
         font-size: 10px;
+    }
+    .about-agency p{
+        font-size: 12px;
     }
     .about-agency a{
         font-size: 12px;
