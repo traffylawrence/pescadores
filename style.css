@@ -67,6 +67,30 @@ overflow-x: hidden;
     box-shadow: 1px 2px 5px 0px #B4B4B4;
 }
 
+.testimonial-carousel {
+    background-color: #006d65; /* Adjust the background color */
+    color: white;
+    padding: 50px 0;
+  }
+  .testimonial-carousel .testimonial-item {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  .testimonial-carousel .testimonial-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .testimonial-carousel .testimonial-controls {
+    color: black;
+  }
+
+
+
+
 footer {
     margin-top: 1.5rem;
     border-top: 1px solid #eaeaea;
@@ -162,9 +186,15 @@ font-weight: bold;
     -webkit-box-shadow: 3px 3px 7px 0px #000000; 
     box-shadow: 3px 3px 7px 0px #000000;
 }
-
+.testimonial-carousel img{
+    margin-left: 100px;
+}
+.testimonial-carousel .col-md-10{
+text-align: center;
+}
 @media (max-width: 992px) {
-   .team .card {
+ 
+    .team .card {
     width: 180px;
     font-size: 12px;
     text-align: center;
@@ -179,6 +209,16 @@ font-weight: bold;
     }
 }
 @media (max-width: 576px) {
+    .testimonial-carousel p{
+        font-size: 12px;
+    }
+    .testimonial-carousel h5{
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+.testimonial-carousel .col-md-10{
+    text-align: center;
+}
     .team .card {
         width: 160px;
         font-size: 12px;
@@ -204,8 +244,17 @@ font-weight: bold;
 
      .carousel-caption h5 {
         font-size: 10px;
+     }
+    .testimonial-carousel p{
+        font-size: 12px;
     }
-
+    .testimonial-carousel h5{
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+.testimonial-carousel .col-md-10{
+    text-align: center;
+}
     .carousel-caption p {
         font-size: 8px;
     }
