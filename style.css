@@ -68,6 +68,8 @@ overflow-x: hidden;
 }
 
 .testimonial-carousel {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: #006d65; /* Adjust the background color */
     color: white;
     padding: 50px 0;
