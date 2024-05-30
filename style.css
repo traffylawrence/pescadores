@@ -79,7 +79,7 @@ overflow-x: hidden;
     color: black;
     padding: 30px;
     border-radius: 10px;
-    text-align: left;
+    text-align:center;
   }
   .testimonial-carousel .testimonial-item img {
     width: 80px;
@@ -89,10 +89,6 @@ overflow-x: hidden;
   .testimonial-carousel .testimonial-controls {
     color: black;
   }
-
-
-
-
 footer {
     margin-top: 1.5rem;
     border-top: 1px solid #eaeaea;
@@ -188,12 +184,8 @@ font-weight: bold;
     -webkit-box-shadow: 3px 3px 7px 0px #000000; 
     box-shadow: 3px 3px 7px 0px #000000;
 }
-.testimonial-carousel img{
-    margin-left: 100px;
-}
-.testimonial-carousel .col-md-10{
-text-align: center;
-}
+
+
 @media (max-width: 992px) {
  
     .team .card {
